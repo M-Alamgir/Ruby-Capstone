@@ -1,18 +1,11 @@
-require 'colorize'
-
 class Load_file
+  attr_accessor :file
   def initialize(url)
-    @url = url 
+    @url = url
   end
 
   def read_file
     local_dir = Dir.glob(@url).first
-    file = File.open(local_dir)
-
-    file.readlines.each do | lines|
-        puts lines.colorize(:green)
-    end
-
-    file.close
+    @file = File.open(local_dir)
   end
 end

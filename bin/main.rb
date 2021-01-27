@@ -3,6 +3,5 @@
 require_relative "../lib/load_file.rb"
 require_relative "../lib/check_linters.rb"
 
-load_file = Load_file.new('test/*.rb')
-
-load_file.read_file
+check = Check_linters.new
+puts check.trailing_space_error
