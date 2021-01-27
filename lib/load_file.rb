@@ -1,3 +1,5 @@
+require 'colorize'
+
 class Load_file
   def initialize(url)
     @url = url 
@@ -8,9 +10,9 @@ class Load_file
     file = File.open(local_dir)
 
     file.readlines.each do | lines|
-        puts lines
+        puts lines.colorize(:green)
     end
-    
+
     file.close
   end
 end
