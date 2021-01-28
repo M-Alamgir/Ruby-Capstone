@@ -8,6 +8,7 @@ check.trailing_space_error
 check.space_after_comma
 check.check_indentation
 check.missing_braces
+check.end_of_file
 
 if check.offenses.empty?
     puts 'No offenses'.colorize(:green) + ' detected'

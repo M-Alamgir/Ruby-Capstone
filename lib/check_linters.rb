@@ -42,13 +42,20 @@ class Check_linters < Load_file
         @load_file.file.readlines.each_with_index do | val, index |
             if val.match(/[)]/) || val.match(/[(]/)
                 if !val.match(/[(]/) || !val.match(/[)]/)
-                    @offenses << "At line #{index + 1}Missing Parentheses, unexpected token kEND".colorize(:red)
+                    @offenses << "At line #{index + 1} Missing Parentheses, unexpected token kEND".colorize(:red)
                 end
             elsif val.match(/[}]/) || val.match(/[{]/)
                 if !val.match(/[{]/) || !val.match(/[}]/)
-                    @offenses << "At line #{index + 1}Missing curly braces, unexpected token kEND".colorize(:red)
+                    @offenses << "At line #{index + 1} Missing curly braces, unexpected token kEND".colorize(:red)
                 end
             end
+        end
+        @load_file.file.seek(0)
+    end
+
+    def end_of_file
+        if !@load_file.file.readlines.last.match(/\n/)
+            @offenses << "At the end of file: Final newline missing".colorize(:red)
         end
     end
 
