@@ -7,7 +7,7 @@ def get_numbers(list, index = 0, taken = [])
   get_numbers(list, index+1, taken + [list[index]])
 end
 
-get_numbers([1,2,3]) 
+get_numbers([1, 2, 3])
 
 def get_numbers_stack(list)
   stack  = [[0, []]]

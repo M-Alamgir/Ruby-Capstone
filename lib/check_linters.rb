@@ -15,5 +15,16 @@ class Check_linters < Load_file
                 @offenses << "At line #{index + 1}:#{val.size - 1} Trailing Whitespace Detected".colorize(:red)
             end
         end
+        @load_file.file.seek(0)
     end
+
+    def space_after_comma
+
+        @load_file.file.readlines.each_with_index do | val, index |
+            if val.include?(',') && !val.include?(', ')
+                @offenses << "At line #{index + 1}:#{val.size - 1} Space missing after comma.".colorize(:red)
+            end
+        end
+    end
+
 end
