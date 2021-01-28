@@ -9,7 +9,7 @@ end
 
 get_numbers([1, 2])
 
-a = [1, 2, 3]
+a = [1, 2]
 
 a.each { | val | val}
 
