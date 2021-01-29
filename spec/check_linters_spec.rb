@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative '../lib/load_file'
 require_relative '../lib/check_linters'
 require 'colorize'

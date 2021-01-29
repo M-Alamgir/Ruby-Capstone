@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # LoadFile class
 class LoadFile
   attr_accessor :file, :close

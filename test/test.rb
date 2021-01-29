@@ -16,7 +16,7 @@ a = [1, 2]
 a.each { |val| p val }
 
 def get_numbers_stack(list)
-  stack  = [[0, []]]
+  stack = [[0, []]]
   output = []
   until stack.empty?
     index, taken = stack.pop
