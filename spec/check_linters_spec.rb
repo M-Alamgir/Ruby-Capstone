@@ -2,6 +2,7 @@
 
 require_relative '../lib/load_file'
 require_relative '../lib/check_linters'
+require 'colorize'
 
 describe Check_linters do
   let(:check) { CheckLinters.new }

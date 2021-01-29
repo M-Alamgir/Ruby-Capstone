@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 # rubocop:disable Metrics/CyclomaticComplexity
-# rubocop:disable Metrics/AbcSize
-# rubocop:disable Metrics/MethodLength
 
 require 'colorize'
 require_relative './load_file'
@@ -67,5 +65,3 @@ class CheckLinters
   end
 end
 # rubocop:enable Metrics/CyclomaticComplexity
-# rubocop:enable Metrics/AbcSize
-# rubocop:enable Metrics/MethodLength
