@@ -4,7 +4,7 @@ require_relative '../lib/load_file'
 require_relative '../lib/check_linters'
 require 'colorize'
 
-describe Check_linters do
+describe CheckLinters do
   let(:check) { CheckLinters.new }
   let(:load_file) { LoadFile.new('test/*.rb') }
   let(:line) { 'This is a line of string'.split('') }
