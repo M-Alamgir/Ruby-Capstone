@@ -4,8 +4,8 @@ require_relative '../lib/load_file'
 require_relative '../lib/check_linters'
 
 describe Check_linters do
-  let(:check) { Check_linters.new }
-  let(:load_file) { Load_file.new('test/*.rb') }
+  let(:check) { CheckLinters.new }
+  let(:load_file) { LoadFile.new('test/*.rb') }
   let(:line) { 'This is a line of string'.split('') }
 
   describe 'Methods' do
