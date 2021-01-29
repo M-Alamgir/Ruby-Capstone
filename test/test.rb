@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# This sample code is taken from https://www.rubyguides.com/2019/02/ruby-code-examples/
-
 def get_numbers(list, index = 0, taken = [])
   return [taken] if index == list.size
 
