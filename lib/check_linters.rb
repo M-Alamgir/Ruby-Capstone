@@ -3,7 +3,7 @@ require_relative './load_file'
 
 # check_linters class
 class CheckLinters
-  attr_reader :offenses, :load_file
+  attr_reader :offenses
 
   def initialize
     @offenses = []
