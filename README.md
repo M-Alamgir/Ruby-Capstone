@@ -2,7 +2,11 @@
 
 # Ruby-Capstone
 
-This customized-linter progeam provides an interface to Ruby's builtin syntax analysis. It will be used with files that have the Ruby syntax.
+This program provides an interface to Ruby's builtin syntax analysis. It will be used with files that have the Ruby syntax.
+
+# Ruby linters program
+
+The whole idea of writing code to check another code is intriguing at the same time cognitively demanding. Building Linters for Ruby, the project provides feedback about errors or warnings in code little by little. The project was built completely with Ruby following all possible best practices. Rubocop was used as a code-linter alongside Gitflow to ensure I maintain good coding standards.
 
 ![Screenshot](/img/img.png)
 
@@ -34,7 +38,7 @@ The custom Ruby linter currently checks for the following errors/warnings.
 - check for trailing whitespaces at the end of line.
 - check for missing/unexpected opening or closing tags  i.e. '(' ')' '{' '}'.
 - check for space after comma.
-- check empty line at the end of file.
+- check for empty line at the end of file.
 
 👤 **Alamgir**
 
