@@ -1,6 +1,5 @@
 # LoadFile class
 class LoadFile
-  attr_accessor :file, :close
 
   def initialize(url)
     @url = url

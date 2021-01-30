@@ -30,11 +30,16 @@ To get a local copy up and running follow these simple example steps in your ter
 
 - Run the program by typing `./bin/main.rb`
 - Make wrong syntactical changes in the `test.rb` file to check for errors.
+- Replace the `test.rb` with the file that user want to check for linter errors.
+- Or Replace the lines of code in `test.rb` file.
+- If program find any errors it will list them terminal with the type of error and line number.
+- If no errors found the user will get a message `No offenses detected`
 
 ## Errors/warnings
 
 The custom Ruby linter currently checks for the following errors/warnings.
-- check for wrong indentation for 2 spaces at the start of line.
+- check wrong indentation for lines which need only 2 spaces. 
+  (it only works with the first level of indentation inside `class` or `method`)
 - check for trailing whitespaces at the end of line.
 - check for missing/unexpected opening or closing tags  i.e. '(' ')' '{' '}'.
 - check for space after comma.
