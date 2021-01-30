@@ -9,8 +9,8 @@ class CheckLinters
     @offenses = []
   end
 
-  def error(name)
-    name.colorize(:red)
+  def error(err)
+    err.colorize(:red)
   end
 
   def trailing_space_error(arg0, arg1)
@@ -45,6 +45,7 @@ class CheckLinters
   end
 
   # rubocop:disable Metrics/CyclomaticComplexity
+  # rubocop:disable Metrics/PerceivedComplexity
 
   def missing_braces(arg0, arg1)
     arg0.each_with_index do |val, index|
@@ -67,6 +68,7 @@ class CheckLinters
   end
 
   # rubocop:enable Metrics/CyclomaticComplexity
+  # rubocop:disable Metrics/PerceivedComplexity
 
   def end_of_file(arg)
     @offenses << error('At the end of file: Final newline missing') unless arg.readlines.last.match(/\n/)
