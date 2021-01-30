@@ -68,7 +68,7 @@ class CheckLinters
   end
 
   # rubocop:enable Metrics/CyclomaticComplexity
-  # rubocop:disable Metrics/PerceivedComplexity
+  # rubocop:enable Metrics/PerceivedComplexity
 
   def end_of_file(arg)
     @offenses << error('At the end of file: Final newline missing') unless arg.readlines.last.match(/\n/)
