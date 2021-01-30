@@ -22,12 +22,17 @@ To get a local copy up and running follow these simple example steps in your ter
 - `cd Ruby-Capstone`
 - `bin/main.rb`
 
-## Build
+## Instructions
+
+- Run the program by typing `./bin/main.rb`
+- Make wrong syntactical changes in the `test.rb` file to check for errors.
+
+## Errors/warnings
 
 The custom Ruby linter currently checks for the following errors/warnings.
-- check for wrong indentation (only for 2 space instead of 4).
-- check for trailing spaces.
-- check for missing/unexpected tags i.e. '( )' and '{ }'.
+- check for wrong indentation for 2 spaces at the start of line.
+- check for trailing whitespaces at the end of line.
+- check for missing/unexpected opening or closing tags  i.e. '(' ')' '{' '}'.
 - check for space after comma.
 - check empty line at the end of file.
 
