@@ -1,6 +1,5 @@
 # LoadFile class
 class LoadFile
-
   def initialize(url)
     @url = url
   end
